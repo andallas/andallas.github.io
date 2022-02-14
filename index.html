@@ -82,7 +82,7 @@
                     <div class="col s12">
                         <div class="card">
                             <div class="card-image">
-                                <img src="https://via.placeholder.com/400x400">
+                                <img class="materialboxed" src="https://via.placeholder.com/400x400">
                                 <span class="card-title">Project Name</span>
                             </div>
                             
@@ -99,7 +99,7 @@
                     <div class="col s12">
                         <div class="card">
                             <div class="card-image">
-                                <img src="https://via.placeholder.com/400x400">
+                                <img class="materialboxed" src="https://via.placeholder.com/400x400">
                                 <span class="card-title">Project Name</span>
                             </div>
                             
@@ -116,7 +116,7 @@
                     <div class="col s12">
                         <div class="card">
                             <div class="card-image">
-                                <img src="https://via.placeholder.com/400x400">
+                                <img class="materialboxed" src="https://via.placeholder.com/400x400">
                                 <span class="card-title">Project Name</span>
                             </div>
                             
@@ -133,7 +133,7 @@
                     <div class="col s12">
                         <div class="card">
                             <div class="card-image">
-                                <img src="https://via.placeholder.com/400x400">
+                                <img class="materialboxed" src="https://via.placeholder.com/400x400">
                                 <span class="card-title">Project Name</span>
                             </div>
                             
@@ -150,7 +150,7 @@
                     <div class="col s12">
                         <div class="card">
                             <div class="card-image">
-                                <img src="https://via.placeholder.com/400x400">
+                                <img class="materialboxed" src="https://via.placeholder.com/400x400">
                                 <span class="card-title">Project Name</span>
                             </div>
                             
@@ -167,7 +167,7 @@
                     <div class="col s12">
                         <div class="card">
                             <div class="card-image">
-                                <img src="https://via.placeholder.com/400x400">
+                                <img class="materialboxed" src="https://via.placeholder.com/400x400">
                                 <span class="card-title">Project Name</span>
                             </div>
                             
@@ -193,6 +193,12 @@
 
         <!-- Standard version for development -->
         <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.materialboxed');
+                var instances = M.Materialbox.init(elems);
+            });
+        </script>
         <!-- Minified version for production -->
         <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
     </body>
