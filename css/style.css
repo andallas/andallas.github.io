@@ -33,11 +33,27 @@ h3 {
         grid-row-gap: 40px;
     }
 
-    .grid_1-2-3_items > div {
+    .grid_1-2-3_items > * {
         padding: 20px;
     }
 }
 
 @media (min-width: 1000px) {
-    
+    .grid_1-2-3_items {
+        grid-template-columns: 30% 30% 30%;
+        grid-row-gap: 50px;
+    }
+
+    .grid_1-2-3_items > * {
+        padding: 30px;
+    }
+
+    .grid_2-2-3_items {
+        grid-template-columns: 30% 30% 30%;
+        grid-row-gap: 50px;
+    }
+
+    .grid_2-2-3_items > * {
+        padding: 30px;
+    }
 }
