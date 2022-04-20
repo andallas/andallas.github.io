@@ -22,6 +22,10 @@ h3 {
     padding: 3.75%;
 }
 
+.full-page {
+    min-height: 100vh;
+}
+
 .grid_2-2-3_items > * {
     padding: 20px;
 }
