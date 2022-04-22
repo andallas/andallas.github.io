@@ -9,3 +9,28 @@
 footer {
     min-height: 70px;
 }
+
+
+.skill-fill-50 {
+    background-image: linear-gradient(to right, #8e24aa 50%, white 50%, white 100%);
+}
+
+.skill-fill-60 {
+    background-image: linear-gradient(to right, #8e24aa 60%, white 60%, white 100%);
+}
+
+.skill-fill-70 {
+    background-image: linear-gradient(to right, #8e24aa 70%, white 70%, white 100%);
+}
+
+.skill-fill-80 {
+    background-image: linear-gradient(to right, #8e24aa 80%, white 80%, white 100%);
+}
+
+.skill-fill-90 {
+    background-image: linear-gradient(to right, #8e24aa 90%, white 90%, white 100%);
+}
+
+.skill-fill-100 {
+    background-image: linear-gradient(to right, #8e24aa 100%, white 100%, white 100%);
+}
