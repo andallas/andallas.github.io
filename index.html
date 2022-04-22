@@ -19,6 +19,7 @@
             <nav>
                 <div class="nav-wrapper green accent-4 row">
                     <ul class="right">
+                        <li><button class="btn amber darken-2 modal-trigger" data-target="modal1">Contact Me!</button></li>
                         <li><a href="#skills_section">Skills</a></li>
                         <li><a href="#experience_section">Experience</a></li>
                         <li><a href="#projects_section">Projects</a></li>
@@ -472,22 +473,56 @@
                     </div>
                 </div>
             </div>
+
+            <div id="modal1" class="modal">
+                <form action="https://formspree.io/f/mbjwprpq" method="POST">
+                    <div class="modal-content">
+                        <div class="row">
+                            <h3 class="col s4 offset-s4 center-align">Contact me!</h3>
+                        </div>
+                        <div class="row">
+                            <p class="col s8 offset-s2 center-align">Interested in my work? I'd love to hear from you. Send me a message, let's talk!</p>
+                        </div>
+                        <div class="row">
+                            <div class="col s10 offset-s1 input-field">
+                                <input placeholder="Enter your name" id="name" name="name" type="text" class="validate">
+                                <label for="name">Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s10 offset-s1 input-field">
+                                <input placeholder="Email" id="email" name="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s10 offset-s1 input-field">
+                                <textarea id="message_area" name="message" class="materialize-textarea"></textarea>
+                                <label for="message_area">Message</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="modal-close waves-effect waves-green btn amber darken-2"><i class="tiny material-icons right">send</i>Send</button>
+                        <div class="row">
+                            <p class="col s4 offset-s8"><em>*reCaptcha used to verify you're not a bot</em></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </main>
 
         <footer class="page-footer footer-copyright green accent-4">
-            <div class="container">
-                © 2022 Hammond Code
-                <a class="grey-text text-lighten-4 right" href="#!">Contact Me!</a>
+            <div class="row">
+                <span class="col s2">© 2022 Hammond Code</span>
+                <button class="col s2 offset-s7 btn amber darken-2 modal-trigger" data-target="modal1">Contact Me!</button>
             </div>
         </footer>
 
         <!-- Standard version for development -->
         <script type="text/javascript" src="js/materialize.js"></script>
         <script type="text/javascript">
-            document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.materialboxed');
-                var instances = M.Materialbox.init(elems);
-            });
+            M.AutoInit();
         </script>
         <!-- Minified version for production -->
         <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
